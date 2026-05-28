@@ -11,6 +11,7 @@ int main(){
             count++;
         }
     }
+    
     cout<<"No of vowel "<<count;
     return 0;
 }
