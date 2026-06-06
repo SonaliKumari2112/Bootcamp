@@ -1,28 +1,22 @@
 #include<iostream>
 using namespace std;
 int main(){
-     int n;
-    cout<<"enter the no of row and column";
+    int n;
     cin>>n;
     int arr[n][n];
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
         cin>>arr[i][j];
+    }
+}
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            int temp=arr[i][j];
+            arr[i][j]=arr[j][i];
+            arr[j][i]=temp;
         }
     }
-     int j=0;
-    while(j<n){
-        int l=0;
-        int r=n-1;
-        while(l<r){
-            int temp=arr[l][j];
-                arr[l][j]=arr[r][j];
-                arr[r][j]=temp;
-                l++;
-                r--;
-        }
-        j++;
-    } int i=0;
+    int i=0;
     while(i<n){
         int l=0;
         int r=n-1;
@@ -35,7 +29,7 @@ int main(){
         }
         i++;
     }
-      for(int i=0;i<n;i++){
+     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
         cout<<arr[i][j];
     }

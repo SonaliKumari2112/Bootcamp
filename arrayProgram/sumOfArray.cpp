@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    cout<<"enter the range of ";
+    int i,j;
+    cin>>i>>j;
+    int sum =0;
+    for(int k=i-1;k<j;k++){
+        sum+=a[k];
+    }
+    cout<<sum;
+    return 0;
+}
