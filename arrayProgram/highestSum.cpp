@@ -6,37 +6,32 @@ int main(){
     cin>>r>>c;
     int arr[r][c];
     for(int i=0;i<r;i++){
-        for(int j=0;j<r;j++){
+        for(int j=0;j<c;j++){
         cin>>arr[i][j];
         }
     }
-    int sum =0; 
     int max=0;
-    int firstindex=-1;
+ 
+    int index=0;
     for(int i=0;i<r;i++){
         int sum=0;
         for(int j=0;j<c;j++){
-            sum=sum+arr[i][j];
-        }
-        if(sum>max){
-            max=sum;
-              firstindex=i;
-        }
-        else if(sum==max){
-           for(int i=firstindex;i<r;i++){
-            for(int j=0;j<c;j++){
-                arr[i][j]=arr[i+1][j];
+            sum=sum+arr[i][j];}
+            if(sum>max){
+                max=sum;
+                index=i;
             }
-
-        }
-        r--;
-   }
-        }
+        
+    }
+        
     
  for(int i=0;i<r;i++){
+     if(i==index){continue;}
         for(int j=0;j<c;j++){
-        cout<<arr[i][j];
-        }
+           
+        cout<<arr[i][j];   
+        
+    }
         cout<<endl;
     }
     

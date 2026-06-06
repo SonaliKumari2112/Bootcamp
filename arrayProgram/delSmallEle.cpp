@@ -8,17 +8,18 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int index;
-    int small=arr[0];
-     for(int i=0;i<n;i++){
-        if(arr[i]<small){
-            small=arr[i];
+    int index=0;
+    
+     for(int i=1;i<n;i++){
+        if(arr[i]<arr[index]){
+           
           index=i;  
         }
      }
      for(int k=index;k<n-1;k++){
         arr[k]=arr[k+1];
      }
+     n--;
       for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
