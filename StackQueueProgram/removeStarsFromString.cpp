@@ -1,11 +1,13 @@
 #include<iostream>
 #include<stack>
+#include<string>
+#include<algorithm>
 using namespace std;
 int main(){
     string s;
     getline(cin,s);
     string ans="";
-    stack<int >st;
+    stack<char >st;
     for(int i=0;i<s.size();i++){
         if(s[i]!='*'){
             st.push(s[i]);
@@ -18,6 +20,7 @@ int main(){
      ans=ans+top;
      st.pop();
     }
-    reverse(s.begin(),s)
+    reverse(ans.begin(),ans.end());
+    cout<<ans;
     return 0;
 }
