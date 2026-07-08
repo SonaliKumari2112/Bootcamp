@@ -10,7 +10,7 @@ int main(){
     for(int i=0;i<n;i++){
         sum=sum^a[i];
     }
-    cout<<sum;
+    cout<<"didtict elment"<<sum;
     return 0;
 
 }
