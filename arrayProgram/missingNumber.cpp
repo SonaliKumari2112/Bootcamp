@@ -10,6 +10,7 @@ int main(){
     for(int i=0;i<n-1;i++){
     miss=miss-a[i];
     }
+    
     cout<<"missing number"<<miss;
     return 0;
 }
