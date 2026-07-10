@@ -25,8 +25,13 @@ void sortOddEven(vector<int>& arr) {
 }
 
 int main() {
-    vector<int> arr = {1, 2, 3, 5, 7, 4, 10};
+    int n;
+    cin>>n;
 
+    vector<int> arr(n) ;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
     sortOddEven(arr);
 
     for (int x : arr)
