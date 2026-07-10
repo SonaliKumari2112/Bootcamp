@@ -42,8 +42,11 @@ string minWindow(string s, string t){
 int main(){
     string s,t;
     cout<<"enter the string";
+
     getline(cin,s);
+
     getline(cin,t);
+    
     string  ss=minWindow(s,t);
     cout<<"minimum windows substring  "<<ss;
     return 0;
