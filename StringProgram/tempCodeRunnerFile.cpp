@@ -42,4 +42,3 @@ int main(){
     cout<<"decoded string";
     cout<<curr;
     return 0;
-}
