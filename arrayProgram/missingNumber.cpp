@@ -8,9 +8,11 @@ int main(){
     }
     int miss=n*(n+1)/2;
     for(int i=0;i<n-1;i++){
+        
     miss=miss-a[i];
     }
     
-    cout<<"missing number"<<miss;
+
+    cout<<"missing number   "<<miss;
     return 0;
 }
