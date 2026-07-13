@@ -48,6 +48,7 @@ int main(){
     getline(cin,t);
     
     string  ss=minWindow(s,t);
-    cout<<"minimum windows substring  "<<ss;
+     
+    cout<<"    minimum windows substring  "<<ss;
     return 0;
 }
