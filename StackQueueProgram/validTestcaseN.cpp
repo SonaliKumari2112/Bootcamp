@@ -27,10 +27,10 @@ int main(){
             }
         }}
         if(isvalid){
-            cout<<s<<"balanced";
+            cout<<s<<" balanced";
 
         }else{
-            cout<<s<<"not balanced";
+            cout<<s<<" not balanced";
         }
     }
     return 0;
