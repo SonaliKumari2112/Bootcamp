@@ -10,7 +10,11 @@ vector<int> nge(vector<int>&v){
         while(!st.empty()&&st.top()<=v[i]){
             st.pop();
         }
-        ans[i]=st.empty()? -1: st.top();
+            if (st.empty()) {
+                    ans[i] = -1;
+            } else {
+                    ans[i] = st.top();
+            }
         st.push(v[i]);
     }
     return ans;
